@@ -54,10 +54,7 @@
                 "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
             }
         },
-        {
-            "Name": "Festival",
-            "Value": "",
-        },
+        
         {
             "Name": "Festival",
             "Value": "FlowerDance",
