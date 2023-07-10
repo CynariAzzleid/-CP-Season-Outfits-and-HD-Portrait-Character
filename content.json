@@ -1035,7 +1035,7 @@
 				"FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
         },
 
-        // Portraits - HD P
+        // Portraits - HD Portraits Add Size
         {
                 "LogName": "HD Portrait Size",
                 "Action": "Load",
