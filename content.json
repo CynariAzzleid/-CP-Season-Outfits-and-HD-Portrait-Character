@@ -1022,7 +1022,8 @@
 		{
                 "LogName": "AbigailPortraits - Festival Base",
                 "Action": "Load",
-                "Target": "Mods/SeasonalCuteCharacters/Abigail_{{Festival}}",
+                // "Target": "Mods/SeasonalCuteCharacters/Abigail_{{Festival}}",
+                "Target": "Mods/SeasonalCuteCharacters/Abigail",
                 "FromFile": "assets/Portraits/Festivals/{{Festival}}/Abigail_{{Festival}}.png",
         },
         {
@@ -1036,7 +1037,8 @@
         {
                 "LogName": "HD Portrait Size",
                 "Action": "Load",
-                "Target": "Mods/HDPortraits/Abigail, Mods/HDPortraits/Abigail_{{Festival}}, Mods/HDPortraits/Abigail_Beach",
+                // "Target": "Mods/HDPortraits/Abigail, Mods/HDPortraits/Abigail_{{Festival}}, Mods/HDPortraits/Abigail_Beach",
+                "Target": "Mods/HDPortraits/Abigail, Mods/HDPortraits/Abigail_Beach",
                 "FromFile": "assets/code/size256.json"
         },
 
@@ -1052,7 +1054,8 @@
         {
                 "LogName": "AbigailPortraits - Festival Load",
                 "Action": "EditData",
-                "Target": "Mods/HDPortraits/Abigail_{{Festival}}",
+                // "Target": "Mods/HDPortraits/Abigail_{{Festival}}",
+                "Target": "Mods/HDPortraits/Abigail",
                 "Entries": {
                 "Portrait": "Mods/SeasonalCuteCharacters/Abigail_{{Festival}}",
                 },
