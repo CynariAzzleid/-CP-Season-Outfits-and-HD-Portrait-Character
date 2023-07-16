@@ -1,64 +1,87 @@
 {
-	"Changes": [
-		{
-			"LogName": "Demetrius - Seasonal",
-			"Action": "EditImage",
-			"Target": "Portraits/Demetrius, Characters/Demetrius",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
-		{
-			"LogName": "Demetrius - Winter Indoor/Outdoor",
-			"Action": "EditImage",
-			"Target": "Portraits/Demetrius, Characters/Demetrius",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-                "Season": "Winter",
-                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Demetrius - Festival",
-			"Action": "EditImage",
-			"Target": "Portraits/Demetrius, Characters/Demetrius",
-            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"FestivalOutfits": "True",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Demetrius - Beach Character",
-			"Action": "EditImage",
-			"Target": "Characters/Demetrius_Beach",
-			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
-		{
-			"LogName": "Demetrius - Beach Portrait",
-			"Action": "EditImage",
-			"Target": "Portraits/Demetrius",
-			"FromFile": "assets/{{TargetPathOnly}}/Beach/Adds/{{TargetWithoutPath}}_Beach.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
-				"Time": "{{Range: 1130, 1820}}",
-			},
-            "Update": "OnTimeChange, OnLocationChange",
-		},
-		
+	 "Changes": [
+	{
+	        "LogName": "Demetrius - Seasonal",
+	        "Action": "EditImage",
+	        "Target": "Characters/Demetrius",
+	        "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+	        "When":
+	        {
+	                "HasFile:{{FromFile}}": true,
+	        },
+	},
+	{
+	        "LogName": "DemetriusPortraits - Seasonal",
+	        "Action": "EditImage",
+	        "Target": "Mods/SeasonalCuteCharacters/Demetrius",
+	        "FromFile": "assets/Portraits/Demetrius/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+	},
+	{
+	        "LogName": "Demetrius - Winter Indoor/Outdoor",
+	        "Action": "EditImage",
+	        "Target": "Characters/Demetrius",
+	        "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+	        "When":
+	        {
+	                "HasFile:{{FromFile}}": true,
+	        "Season": "Winter",
+	        "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+	        },
+	        "Update": "OnLocationChange",
+	},
+	{
+	        "LogName": "DemetriusPortraits - Winter Indoor/Outdoor",
+	        "Action": "EditImage",
+	        "Target": "Mods/SeasonalCuteCharacters/Demetrius",
+	        "FromFile": "assets/Portraits/Demetrius/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+	        "When":
+	        {
+	        "Season": "Winter",
+	        "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+	        },
+	        "Update": "OnLocationChange",
+	},
+	{
+	        "LogName": "Demetrius - Festival",
+	        "Action": "EditImage",
+	        "Target": "Characters/Demetrius",
+	        "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+	        "When":
+	        {
+	                "HasFile:{{FromFile}}": true,
+	                "FestivalOutfits": "True",
+	        },
+	        "Update": "OnLocationChange",
+	},
+	{
+	        "LogName": "DemetriusPortraits - Festival",
+	        "Action": "EditImage",
+	        "Target": "Mods/SeasonalCuteCharacters/Demetrius",
+	        "FromFile": "assets/Portraits/Festivals/{{Festival}}/Demetrius_{{Festival}}.png",
+	        "When":
+	        {
+	                "HasFile:{{FromFile}}": true,
+	                "FestivalOutfits": "True",
+	        },
+	        "Update": "OnLocationChange",
+	},
+	{
+	        "LogName": "Demetrius - Beach",
+	        "Action": "EditImage",
+	        "Target": "Characters/Demetrius_Beach",
+	        "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+	        "When":
+	        {
+	                "HasFile:{{FromFile}}": true,
+	        },
+	},
+	{
+	        "LogName": "DemetriusPortraits - Beach",
+	        "Action": "EditImage",
+	        "Target": "Mods/SeasonalCuteCharacters/Demetrius_Beach",
+	        "FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+	},
+
 // NOSE OVERLAY
 		{
 			"LogName": "Demetrius - Seasonal Nose",

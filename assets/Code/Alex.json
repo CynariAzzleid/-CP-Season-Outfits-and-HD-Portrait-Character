@@ -1,50 +1,86 @@
 {
-	"Changes": [
-		{
-			"LogName": "Alex - Seasonal",
-			"Action": "EditImage",
-			"Target": "Portraits/Alex, Characters/Alex",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
-		{
-			"LogName": "Alex - Winter Indoor/Outdoor",
-			"Action": "EditImage",
-			"Target": "Portraits/Alex, Characters/Alex",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
+        "Changes": [
+                {
+                        "LogName": "Alex - Seasonal",
+                        "Action": "EditImage",
+                        "Target": "Characters/Alex",
+                        "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                        "When":
+                        {
+                                "HasFile:{{FromFile}}": true,
+                        },
+                },
+                {
+                        "LogName": "AlexPortraits - Seasonal",
+                        "Action": "EditImage",
+                        "Target": "Mods/SeasonalCuteCharacters/Alex",
+                        "FromFile": "assets/Portraits/Alex/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                },
+                {
+                        "LogName": "Alex - Winter Indoor/Outdoor",
+                        "Action": "EditImage",
+                        "Target": "Characters/Alex",
+                        "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                        "When":
+                        {
+                                "HasFile:{{FromFile}}": true,
                 "Season": "Winter",
                 "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Alex - Festival",
-			"Action": "EditImage",
-			"Target": "Portraits/Alex, Characters/Alex",
+                        },
+                        "Update": "OnLocationChange",
+                },
+                {
+                        "LogName": "AlexPortraits - Winter Indoor/Outdoor",
+                        "Action": "EditImage",
+                        "Target": "Mods/SeasonalCuteCharacters/Alex",
+                        "FromFile": "assets/Portraits/Alex/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                        "When":
+                        {
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+                        },
+                        "Update": "OnLocationChange",
+                },
+                {
+                        "LogName": "Alex - Festival",
+                        "Action": "EditImage",
+                        "Target": "Characters/Alex",
             "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"FestivalOutfits": "True",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Alex - Beach",
-			"Action": "EditImage",
-			"Target": "Portraits/Alex_Beach, Characters/Alex_Beach",
-			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
+                        "When":
+                        {
+                                "HasFile:{{FromFile}}": true,
+                                "FestivalOutfits": "True",
+                        },
+                        "Update": "OnLocationChange",
+                },
+                {
+                        "LogName": "AlexPortraits - Festival",
+                        "Action": "EditImage",
+                        "Target": "Mods/SeasonalCuteCharacters/Alex",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/Alex_{{Festival}}.png",
+                        "When":
+                        {
+                                "HasFile:{{FromFile}}": true,
+                                "FestivalOutfits": "True",
+                        },
+                        "Update": "OnLocationChange",
+                },
+                {
+                        "LogName": "Alex - Beach",
+                        "Action": "EditImage",
+                        "Target": "Characters/Alex_Beach",
+                        "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+                        "When":
+                        {
+                                "HasFile:{{FromFile}}": true,
+                        },
+                },
+                {
+                        "LogName": "AlexPortraits - Beach",
+                        "Action": "EditImage",
+                        "Target": "Mods/SeasonalCuteCharacters/Alex_Beach",
+                        "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+                },
 		
 // NOSE OVERLAY
 		{

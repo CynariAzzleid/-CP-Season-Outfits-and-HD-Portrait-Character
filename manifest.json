@@ -1,11 +1,11 @@
 {
-   "Name": "Seasonal Cute Characters",
-   "Author": "Poltergeister with assets by various artists",
-   "Version": "4.0.3",
-   "Description": "Seasonal outfits with the slightly cuter character aesthetic.",
-   "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+   "Name": "Season Outfits and HD Portrait Character",
+   "Author": "Azzleid with assets by various artists",
+   "Version": "1.0.0",
+   "Description": "Azzleid made something :)), Cre (Seasonal Cute Characters with skin Character, Jier's HD Vanilla Portraits with HD face Character)",
+   "UniqueID": "Azzleid.SeasonOutfitsandHDPortraitCharacter",
     "MinimumApiVersion": "3.10.0",
-"UpdateKeys": [ "Nexus:5450" ],
+"UpdateKeys": [ "Nexus:" ],
    "ContentPackFor": {
       "UniqueID": "Pathoschild.ContentPatcher",
    },

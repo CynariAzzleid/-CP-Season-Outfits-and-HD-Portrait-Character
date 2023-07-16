@@ -1,6 +1,5 @@
-// I dont know what I'm doing
-// This is all guess work
-
+// This is my first time making a mod even though it's on an existing file. Hope you like it :3
+// My English is not very good, sr T.T
 
 {
     "Format": "1.28.0",
@@ -1033,7 +1032,7 @@
 				"FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
         },
 
-        // Portraits - HD Portraits Add Size
+        // Portraits - HD Portraits Add Size Abigail
         {
                 "LogName": "HD Portrait Size",
                 "Action": "Load",
@@ -1042,7 +1041,7 @@
                 "FromFile": "assets/code/size256.json"
         },
 
-        // Portraits - Load HD Portraits
+        // Portraits - Load HD Portraits Abigail
         {
                 "LogName": "AbigailPortraits - Seasonal Load",
                 "Action": "EditData",
@@ -1069,6 +1068,260 @@
                 },
         },
 
-         //=============================================================	
+         //=============================================================
+         // Portraits - HD Portraits Base Alex
+        {
+                "LogName": "AlexPortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Alex",
+                "FromFile": "assets/Portraits/Alex/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+		{
+                "LogName": "AlexPortraits - Festival Base",
+                "Action": "Load",
+                // "Target": "Mods/SeasonalCuteCharacters/Alex_{{Festival}}",
+                "Target": "Mods/SeasonalCuteCharacters/Alex",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Alex_{{Festival}}.png",
+        },
+        {
+                "LogName": "AlexPortraits - Beach Base",
+                "Action": "Load",
+				"Target": "Mods/SeasonalCuteCharacters/Alex_Beach",
+				"FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size Alex
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                // "Target": "Mods/HDPortraits/Alex, Mods/HDPortraits/Alex_{{Festival}}, Mods/HDPortraits/Alex_Beach",
+                "Target": "Mods/HDPortraits/Alex, Mods/HDPortraits/Alex_Beach",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Alex
+        {
+                "LogName": "AlexPortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Alex",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Alex",
+                },
+        },
+        {
+                "LogName": "AlexPortraits - Festival Load",
+                "Action": "EditData",
+                // "Target": "Mods/HDPortraits/Alex_{{Festival}}",
+                "Target": "Mods/HDPortraits/Alex",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Alex_{{Festival}}",
+                },
+        },
+                {
+                "LogName": "AlexPortraits - Beach Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Alex_Beach",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Alex_Beach",
+                },
+        },
+
+        //=======================================================
+         // Portraits - HD Portraits Base Caroline
+        {
+                "LogName": "CarolinePortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Caroline",
+                "FromFile": "assets/Portraits/Caroline/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "CarolinePortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Caroline",
+                "FromFile": "assets/Portraits/Caroline/{{TargetWithoutPath}}_Aerobics.png",
+        },
+		{
+                "LogName": "CarolinePortraits - Festival Base",
+                "Action": "Load",
+                // "Target": "Mods/SeasonalCuteCharacters/Caroline_{{Festival}}",
+                "Target": "Mods/SeasonalCuteCharacters/Caroline",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Caroline_{{Festival}}.png",
+        },
+        {
+                "LogName": "CarolinePortraits - Beach Base",
+                "Action": "Load",
+				"Target": "Mods/SeasonalCuteCharacters/Caroline_Beach",
+				"FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size Caroline
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                // "Target": "Mods/HDPortraits/Caroline, Mods/HDPortraits/Caroline_{{Festival}}, Mods/HDPortraits/Caroline_Beach",
+                "Target": "Mods/HDPortraits/Caroline, Mods/HDPortraits/Caroline_Beach",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Caroline
+        {
+                "LogName": "CarolinePortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Caroline",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Caroline",
+                },
+        },
+        {
+                "LogName": "CarolinePortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Caroline",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Caroline_Aerobics",
+                },
+        },
+        {
+                "LogName": "CarolinePortraits - Festival Load",
+                "Action": "EditData",
+                // "Target": "Mods/HDPortraits/Caroline_{{Festival}}",
+                "Target": "Mods/HDPortraits/Caroline",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Caroline_{{Festival}}",
+                },
+        },
+                {
+                "LogName": "CarolinePortraits - Beach Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Caroline_Beach",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Caroline_Beach",
+                },
+        },
+
+        //=======================================================
+        // Portraits - HD Portraits Base Clint
+        {
+                "LogName": "ClintPortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Clint",
+                "FromFile": "assets/Portraits/Clint/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "ClintPortraits - Work Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Clint",
+                "FromFile": "assets/Portraits/Clint/{{TargetWithoutPath}}_{{season}}{{ClintWork}}.png",
+        },
+	{
+                "LogName": "ClintPortraits - Festival Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Clint",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Clint_{{Festival}}.png",
+        },
+        {
+                "LogName": "ClintPortraits - Beach Base",
+                "Action": "Load",
+				"Target": "Mods/SeasonalCuteCharacters/Clint_Beach",
+				"FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size Clint
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Clint, Mods/HDPortraits/Clint_Beach",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Clint
+        {
+                "LogName": "ClintPortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Clint",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Clint",
+                },
+        },
+        {
+                "LogName": "ClintPortraits - Work Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Clint",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Clint_{{season}}{{ClintWork}}",
+                },
+        },
+        {
+                "LogName": "ClintPortraits - Festival Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Clint",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Clint_{{Festival}}",
+                },
+        },
+                {
+                "LogName": "ClintPortraits - Beach Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Clint_Beach",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Clint_Beach",
+                },
+        },
+
+        //=======================================================
+        // Portraits - HD Portraits Base Demetrius
+        {
+                "LogName": "DemetriusPortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Demetrius",
+                "FromFile": "assets/Portraits/Demetrius/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+		{
+                "LogName": "DemetriusPortraits - Festival Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Demetrius",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Demetrius_{{Festival}}.png",
+        },
+        {
+                "LogName": "DemetriusPortraits - Beach Base",
+                "Action": "Load",
+				"Target": "Mods/SeasonalCuteCharacters/Demetrius_Beach",
+				"FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size Demetrius
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Demetrius, Mods/HDPortraits/Demetrius_Beach",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Demetrius
+        {
+                "LogName": "DemetriusPortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Demetrius",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Demetrius",
+                },
+        }
+        {
+                "LogName": "DemetriusPortraits - Festival Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Demetrius",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Demetrius_{{Festival}}",
+                },
+        },
+                {
+                "LogName": "DemetriusPortraits - Beach Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Demetrius_Beach",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Demetrius_Beach",
+                },
+        },
+
+        //=======================================================	
     ]
 }
