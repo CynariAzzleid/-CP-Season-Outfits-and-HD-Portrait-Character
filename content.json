@@ -110,7 +110,7 @@
             {
                 "ExtraOutfits": "True",
                 "LocationName |contains= Blacksmith": false,
-            }
+            },
         },
         {
 			"Name": "SamWork",
