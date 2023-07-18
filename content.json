@@ -1134,12 +1134,7 @@
                 "Target": "Mods/SeasonalCuteCharacters/Caroline",
                 "FromFile": "assets/Portraits/Caroline/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
         },
-        {
-                "LogName": "CarolinePortraits - Seasonal Base",
-                "Action": "Load",
-                "Target": "Mods/SeasonalCuteCharacters/Caroline",
-                "FromFile": "assets/Portraits/Caroline/{{TargetWithoutPath}}_Aerobics.png",
-        },
+
 		{
                 "LogName": "CarolinePortraits - Festival Base",
                 "Action": "Load",
@@ -1172,14 +1167,7 @@
                 "Portrait": "Mods/SeasonalCuteCharacters/Caroline",
                 },
         },
-        {
-                "LogName": "CarolinePortraits - Seasonal Load",
-                "Action": "EditData",
-                "Target": "Mods/HDPortraits/Caroline",
-                "Entries": {
-                "Portrait": "Mods/SeasonalCuteCharacters/Caroline_Aerobics",
-                },
-        },
+
         {
                 "LogName": "CarolinePortraits - Festival Load",
                 "Action": "EditData",
@@ -1206,13 +1194,7 @@
                 "Target": "Mods/SeasonalCuteCharacters/Clint",
                 "FromFile": "assets/Portraits/Clint/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
         },
-        {
-                "LogName": "ClintPortraits - Work Base",
-                "Action": "Load",
-                "Target": "Mods/SeasonalCuteCharacters/Clint",
-                "FromFile": "assets/Portraits/Clint/{{TargetWithoutPath}}_{{season}}{{ClintWork}}.png",
-        },
-	{
+		{
                 "LogName": "ClintPortraits - Festival Base",
                 "Action": "Load",
                 "Target": "Mods/SeasonalCuteCharacters/Clint",
@@ -1240,14 +1222,6 @@
                 "Target": "Mods/HDPortraits/Clint",
                 "Entries": {
                 "Portrait": "Mods/SeasonalCuteCharacters/Clint",
-                },
-        },
-        {
-                "LogName": "ClintPortraits - Work Load",
-                "Action": "EditData",
-                "Target": "Mods/HDPortraits/Clint",
-                "Entries": {
-                "Portrait": "Mods/SeasonalCuteCharacters/Clint_{{season}}{{ClintWork}}",
                 },
         },
         {
@@ -1304,7 +1278,7 @@
                 "Entries": {
                 "Portrait": "Mods/SeasonalCuteCharacters/Demetrius",
                 },
-        }
+        },
         {
                 "LogName": "DemetriusPortraits - Festival Load",
                 "Action": "EditData",

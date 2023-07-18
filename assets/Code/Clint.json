@@ -9,12 +9,14 @@
                         {
                                 "HasFile:{{FromFile}}": true,
                         },
+                        "Update": "OnLocationChange",
                 },
                 {
                         "LogName": "ClintPortraits - Seasonal",
                         "Action": "EditImage",
                         "Target": "Mods/SeasonalCuteCharacters/Clint",
                         "FromFile": "assets/Portraits/Clint/{{TargetWithoutPath}}_{{season}}{{ClintWork}}.png",
+                        "Update": "OnLocationChange",
                 },
                 {
                         "LogName": "Clint - Winter Indoor/Outdoor",
@@ -24,8 +26,8 @@
                         "When":
                         {
                                 "HasFile:{{FromFile}}": true,
-                "Season": "Winter",
-                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+                                "Season": "Winter",
+                                "LocationName |contains= Blacksmith": false,
                         },
                         "Update": "OnLocationChange",
                 },
@@ -36,8 +38,8 @@
                         "FromFile": "assets/Portraits/Clint/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
                         "When":
                         {
-                "Season": "Winter",
-                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+                                "Season": "Winter",
+                                "LocationName |contains= Blacksmith": false,
                         },
                         "Update": "OnLocationChange",
                 },
