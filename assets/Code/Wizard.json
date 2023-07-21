@@ -10,7 +10,8 @@
 				"HasFile:{{FromFile}}": true,
 			},
 		},
-		
+
+
 // NOSE OVERLAY
 		{
 			"LogName": "Wizard - Seasonal Nose",
