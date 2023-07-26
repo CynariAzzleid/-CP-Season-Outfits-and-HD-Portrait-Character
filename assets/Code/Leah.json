@@ -1,50 +1,86 @@
 {
 	"Changes": [
-		{
-			"LogName": "Leah - Seasonal",
-			"Action": "EditImage",
-			"Target": "Portraits/Leah, Characters/Leah",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
-		{
-			"LogName": "Leah - Winter Indoor/Outdoor",
-			"Action": "EditImage",
-			"Target": "Portraits/Leah, Characters/Leah",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
+        {
+                "LogName": "Leah - Seasonal",
+                "Action": "EditImage",
+                "Target": "Characters/Leah",
+                "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                },
+        },
+        {
+                "LogName": "LeahPortraits - Seasonal",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Leah",
+                "FromFile": "assets/Portraits/Leah/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "Leah - Winter Indoor/Outdoor",
+                "Action": "EditImage",
+                "Target": "Characters/Leah",
+                "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
                 "Season": "Winter",
                 "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Leah - Festival",
-			"Action": "EditImage",
-			"Target": "Portraits/Leah, Characters/Leah",
-            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"FestivalOutfits": "True",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Leah - Beach",
-			"Action": "EditImage",
-			"Target": "Portraits/Leah_Beach, Characters/Leah_Beach",
-			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "LeahPortraits - Winter Indoor/Outdoor",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Leah",
+                "FromFile": "assets/Portraits/Leah/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "Leah - Festival",
+                "Action": "EditImage",
+                "Target": "Characters/Leah",
+                "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                        "FestivalOutfits": "True",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "LeahPortraits - Festival",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Leah",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Leah_{{Festival}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                        "FestivalOutfits": "True",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "Leah - Beach",
+                "Action": "EditImage",
+                "Target": "Characters/Leah_Beach",
+                "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                },
+        },
+        {
+                "LogName": "LeahPortraits - Beach",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Leah_Beach",
+                "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png"
+        },
 		{
 			"LogName": "Leah - Aerobics",
 			"Action": "EditImage",

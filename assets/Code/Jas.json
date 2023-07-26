@@ -1,54 +1,96 @@
 {
-	"Changes": [
-		{
-			"LogName": "Jas - Seasonal",
-			"Action": "EditImage",
-			"Target": "Portraits/Jas, Characters/Jas",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
-		{
-			"LogName": "Jas - Winter Indoor/Outdoor",
-			"Action": "EditImage",
-			"Target": "Portraits/Jas, Characters/Jas",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-                "Season": "Winter",
-                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Jas - Festival",
-			"Action": "EditImage",
-			"Target": "Portraits/Jas, Characters/Jas",
+    "Changes": [
+    {
+            "LogName": "Jas - Seasonal",
+            "Action": "EditImage",
+            "Target": "Characters/Jas",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+            "When":
+            {
+                    "HasFile:{{FromFile}}": true,
+            },
+    },
+    {
+            "LogName": "JasPortraits - Seasonal",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/Jas",
+            "FromFile": "assets/Portraits/Jas/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+    },
+    {
+            "LogName": "Jas - Winter Indoor/Outdoor",
+            "Action": "EditImage",
+            "Target": "Characters/Jas",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+            "When":
+            {
+                    "HasFile:{{FromFile}}": true,
+            "Season": "Winter",
+            "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+            },
+            "Update": "OnLocationChange",
+    },
+    {
+            "LogName": "JasPortraits - Winter Indoor/Outdoor",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/Jas",
+            "FromFile": "assets/Portraits/Jas/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+            "When":
+            {
+            "Season": "Winter",
+            "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+            },
+            "Update": "OnLocationChange",
+    },
+    {
+            "LogName": "Jas - Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Jas",
             "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"FestivalOutfits": "True",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Jas - Beach Portrait",
-			"Action": "EditImage",
-			"Target": "Portraits/Jas, Characters/Jas",
-			"FromFile": "assets/{{TargetPathOnly}}/Beach/Adds/{{TargetWithoutPath}}_Beach.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
-				"Time": "{{Range: 1130, 1820}}",
-			},
-            "Update": "OnTimeChange, OnLocationChange",
-		},
-		
+            "When":
+            {
+                    "HasFile:{{FromFile}}": true,
+                    "FestivalOutfits": "True",
+            },
+            "Update": "OnLocationChange",
+    },
+    {
+            "LogName": "JasPortraits - Festival",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/Jas",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/Jas_{{Festival}}.png",
+            "When":
+            {
+                    "HasFile:{{FromFile}}": true,
+                    "FestivalOutfits": "True",
+            },
+            "Update": "OnLocationChange",
+    },
+        {
+                "LogName": "Jas - Beach",
+                "Action": "EditImage",
+                "Target": "Characters/Jas",
+                "FromFile": "assets/{{TargetPathOnly}}/Beach/Adds/{{TargetWithoutPath}}_Beach.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                        "LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+                        "Time": "{{Range: 1130, 1820}}",
+                },
+        "Update": "OnTimeChange, OnLocationChange",
+        },
+        {
+                "LogName": "Jas - Beach",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Jas_Beach",
+                "FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+                "When":
+                {
+                        "LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+                        "Time": "{{Range: 1130, 1820}}",
+                },
+        "Update": "OnTimeChange, OnLocationChange",
+        },
+        
 // NOSE OVERLAY
 		{
 			"LogName": "Jas - Seasonal Nose",
