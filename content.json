@@ -1059,7 +1059,7 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Abigail_{{Festival}}",
             },
     },
-            {
+    {
             "LogName": "AbigailPortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Abigail_Beach",
@@ -1117,7 +1117,7 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Alex_{{Festival}}",
             },
     },
-            {
+    {
             "LogName": "AlexPortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Alex_Beach",
@@ -1177,7 +1177,7 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Caroline_{{Festival}}",
             },
     },
-            {
+    {
             "LogName": "CarolinePortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Caroline_Beach",
@@ -1232,7 +1232,7 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Clint_{{Festival}}",
             },
     },
-            {
+    {
             "LogName": "ClintPortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Clint_Beach",
@@ -1287,7 +1287,7 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Demetrius_{{Festival}}",
             },
     },
-            {
+    {
             "LogName": "DemetriusPortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Demetrius_Beach",
@@ -1297,6 +1297,62 @@
     },
 
 	//=======================================================
+	//=======================================================
+	// Portraits - HD Portraits Base Gus
+    {
+            "LogName": "GusPortraits - Seasonal Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Gus",
+            "FromFile": "assets/Portraits/Gus/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+    },
+	{
+            "LogName": "GusPortraits - Festival Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Gus",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/Gus_{{Festival}}.png",
+    },
+    {
+            "LogName": "GusPortraits - Beach Base",
+            "Action": "Load",
+			"Target": "Mods/SeasonalCuteCharacters/Gus_Beach",
+			"FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+    },
+
+    // Portraits - HD Portraits Add Size Gus
+    {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/Gus, Mods/HDPortraits/Gus_Beach",
+            "FromFile": "assets/code/size256.json"
+    },
+
+    // Portraits - Load HD Portraits Gus
+    {
+            "LogName": "GusPortraits - Seasonal Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Gus",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Gus",
+            },
+    },
+    {
+            "LogName": "GusPortraits - Festival Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Gus",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Gus_{{Festival}}",
+            },
+    },
+    {
+            "LogName": "GusPortraits - Beach Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Gus_Beach",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Gus_Beach",
+            },
+    },
+
+    //=======================================================
 	//=======================================================       
     // Portraits - HD Portraits Base Jas
     {
@@ -1305,7 +1361,7 @@
             "Target": "Mods/SeasonalCuteCharacters/Jas",
             "FromFile": "assets/Portraits/Jas/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
     },
-            {
+    {
             "LogName": "JasPortraits - Festival Base",
             "Action": "Load",
             "Target": "Mods/SeasonalCuteCharacters/Jas",
@@ -1343,7 +1399,7 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Jas_{{Festival}}",
             },
     },
-            {
+    {
             "LogName": "JasPortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Jas_Beach",
@@ -1399,7 +1455,7 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Leah_{{Festival}}",
             },
     },
-            {
+    {
             "LogName": "LeahPortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Leah_Beach",
@@ -1455,12 +1511,53 @@
             "Portrait": "Mods/SeasonalCuteCharacters/Vincent_{{Festival}}",
             },
     },
-            {
+	{
             "LogName": "VincentPortraits - Beach Load",
             "Action": "EditData",
             "Target": "Mods/HDPortraits/Vincent_Beach",
             "Entries": {
             "Portrait": "Mods/SeasonalCuteCharacters/Vincent_Beach",
+            },
+    },
+
+    //=======================================================
+    // Portraits - HD Portraits Base Willy
+    {
+            "LogName": "WillyPortraits - Seasonal Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Willy",
+            "FromFile": "assets/Portraits/Willy/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+    },
+	{
+            "LogName": "WillyPortraits - Festival Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Willy",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/Willy_{{Festival}}.png",
+    },
+
+    // Portraits - HD Portraits Add Size Willy
+    {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/Willy",
+            "FromFile": "assets/code/size256.json"
+    },
+
+    // Portraits - Load HD Portraits Willy
+    {
+            "LogName": "WillyPortraits - Seasonal Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Willy",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Willy",
+            },
+    },
+    {
+            "LogName": "WillyPortraits - Festival Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Willy",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Willy_{{Festival}}",
             },
     },
 

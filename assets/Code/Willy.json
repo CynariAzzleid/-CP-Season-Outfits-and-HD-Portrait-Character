@@ -1,54 +1,70 @@
 {
 	"Changes": [
-		{
-			"LogName": "Willy - Seasonal",
-			"Action": "EditImage",
-			"Target": "Portraits/Willy, Characters/Willy",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
-		{
-			"LogName": "Willy - Winter Indoor/Outdoor",
-			"Action": "EditImage",
-			"Target": "Portraits/Willy, Characters/Willy",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
+        {
+                "LogName": "Willy - Seasonal",
+                "Action": "EditImage",
+                "Target": "Characters/Willy",
+                "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                },
+        },
+        {
+                "LogName": "WillyPortraits - Seasonal",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Willy",
+                "FromFile": "assets/Portraits/Willy/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "Willy - Winter Indoor/Outdoor",
+                "Action": "EditImage",
+                "Target": "Characters/Willy",
+                "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
                 "Season": "Winter",
                 "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Willy - Festival",
-			"Action": "EditImage",
-			"Target": "Portraits/Willy, Characters/Willy",
-            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"FestivalOutfits": "True",
-			},
-			"Update": "OnLocationChange",
-		},
-		
-// NOSE OVERLAY
-		{
-			"LogName": "Willy - Seasonal Nose",
-			"Action": "EditImage",
-			"Target": "Characters/Willy",
-            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
-            "PatchMode": "Overlay",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"NoNose": "false",
-			},
-		},
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "WillyPortraits - Winter Indoor/Outdoor",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Willy",
+                "FromFile": "assets/Portraits/Willy/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "Willy - Festival",
+                "Action": "EditImage",
+                "Target": "Characters/Willy",
+                "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                        "FestivalOutfits": "True",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "WillyPortraits - Festival",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Willy",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Willy_{{Festival}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                        "FestivalOutfits": "True",
+                },
+                "Update": "OnLocationChange",
+        },
 		
 // MISCELLANEOUS		
 		{

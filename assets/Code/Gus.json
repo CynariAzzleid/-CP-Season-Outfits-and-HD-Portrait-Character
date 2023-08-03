@@ -1,53 +1,86 @@
 {
-	"Changes": [
-		{
-			"LogName": "Gus - Seasonal",
-			"Action": "EditImage",
-			"Target": "Portraits/Gus, Characters/Gus",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
-		},
-		{
-			"LogName": "Gus - Winter Indoor/Outdoor",
-			"Action": "EditImage",
-			"Target": "Portraits/Gus, Characters/Gus",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
+    "Changes": [
+        {
+                "LogName": "Gus - Seasonal",
+                "Action": "EditImage",
+                "Target": "Characters/Gus",
+                "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                },
+        },
+        {
+                "LogName": "GusPortraits - Seasonal",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Gus",
+                "FromFile": "assets/Portraits/Gus/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "Gus - Winter Indoor/Outdoor",
+                "Action": "EditImage",
+                "Target": "Characters/Gus",
+                "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
                 "Season": "Winter",
                 "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Gus - Festival",
-			"Action": "EditImage",
-			"Target": "Portraits/Gus, Characters/Gus",
-            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"FestivalOutfits": "True",
-			},
-			"Update": "OnLocationChange",
-		},
-		{
-			"LogName": "Gus - Beach",
-			"Action": "EditImage",
-			"Target": "Portraits/Gus, Characters/Gus",
-			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
-				"Time": "{{Range: 1130, 1820}}",
-			},
-            "Update": "OnTimeChange, OnLocationChange",
-		},
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "GusPortraits - Winter Indoor/Outdoor",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Gus",
+                "FromFile": "assets/Portraits/Gus/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                "When":
+                {
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "Gus - Festival",
+                "Action": "EditImage",
+                "Target": "Characters/Gus",
+                "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                        "FestivalOutfits": "True",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "GusPortraits - Festival",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Gus",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Gus_{{Festival}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                        "FestivalOutfits": "True",
+                },
+                "Update": "OnLocationChange",
+        },
+        {
+                "LogName": "Gus - Beach",
+                "Action": "EditImage",
+                "Target": "Characters/Gus_Beach",
+                "FromFile": "assets/{{TargetPathOnly}}/Beach/Adds/{{TargetWithoutPath}}.png",
+                "When":
+                {
+                        "HasFile:{{FromFile}}": true,
+                },
+        },
+        {
+                "LogName": "GusPortraits - Beach",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Gus_Beach",
+                "FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png"
+        },
 		
 // MISCELLANEOUS		
 		{
