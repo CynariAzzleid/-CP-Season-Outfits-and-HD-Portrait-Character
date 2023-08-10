@@ -3,9 +3,29 @@
 	
 // Birdie
 		{
-			"LogName": "Birdie - Slightly Cuter",
+                "LogName": "BirdiePortraits Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Birdie",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Birdie",
+                "FromFile": "assets/code/Size256.json",
+        },
+        {
+                "LogName": "BirdiePortraits Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Birdie",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+                },
+        },
+		{
+			"LogName": "Birdie",
 			"Action": "EditImage",
-			"Target": "Portraits/Birdie, Characters/Birdie",
+			"Target": "Characters/Birdie",
 			"FromFile": "assets/{{Target}}.png",
 			"When":
 			{
@@ -14,47 +34,269 @@
 			},
 		},
 		{
-			"LogName": "Birdie - Seasonal Nose",
+			"LogName": "BirdiePortrait",
 			"Action": "EditImage",
-			"Target": "Characters/Birdie",
-            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
-            "PatchMode": "Overlay",
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-				"NoNose": "false",
-			},
+			"Target": "Mods/SeasonalCuteCharacters/Birdie",
+			"FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
 		},
-		
-// Krobus
-		{
-            "LogName": "Krobus - Slightly Cuter",
+//Bouncer
+        {
+                "LogName": "BouncerPortraits Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Bouncer",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Bouncer",
+                "FromFile": "assets/code/Size256.json",
+        },
+        {
+                "LogName": "BouncerPortraits Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Bouncer",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+                },
+        },
+        {
+                "LogName": "Bouncer",
+                "Action": "EditImage",
+                "Target": "Characters/Bouncer",
+                "FromFile": "assets/{{Target}}.png",
+        },
+        {
+                "LogName": "BouncerPortrait",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Bouncer",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+//Dobson
+    	{
+                "LogName": "DobsonPortraits Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Dobson",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Dobson",
+                "FromFile": "assets/code/Size256.json",
+        },
+        {
+                "LogName": "DobsonPortraits Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Dobson",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+                },
+        },
+        {
+                "LogName": "DobsonPortraits",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Dobson",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+//Dwarf
+        {
+            "LogName": "DwarfPortraits Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Dwarf",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/Dwarf",
+                "FromFile": "assets/code/Size256.json",
+        },
+        {
+            "LogName": "DwarfPortraits Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Dwarf",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+            },
+        },
+        {
+            "LogName": "Dwarf",
             "Action": "EditImage",
-            "Target": "Portraits/Krobus, Characters/Krobus",
+            "Target": "Characters/Dwarf",
             "FromFile": "assets/{{Target}}.png",
             "When":
             {
                 "HasFile:{{FromFile}}": true,
-                "SlightlyCuterKrobus": "True",
-            }        
-		},
-		
+                "SlightlyCuterDwarf": "True",
+            },
+        },
+        {
+            "LogName": "DwarfPortrait",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/Dwarf",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+//Grandpa       
+        {
+                "LogName": "GrandpaPortraits Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Grandpa",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Grandpa",
+                "FromFile": "assets/code/Size256.json",
+        },
+        {
+                "LogName": "GrandpaPortraits Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Grandpa",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+                },
+        },
+        {
+                "LogName": "GrandpaPortraits",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Grandpa",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+//Governor		
+		{
+                "LogName": "GovernorPortraits Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Governor",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Governor",
+                "FromFile": "assets/code/Size256.json",
+        },
+        {
+                "LogName": "GovernorPortraits Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Governor",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+                },
+        },
+        {
+                "LogName": "Governor",
+                "Action": "EditImage",
+                "Target": "Characters/Governor",
+                "FromFile": "assets/{{Target}}.png",
+        },
+        {
+                "LogName": "GovernorPortraits",
+                "Action": "EditImage",
+                "Target": "Mods/SeasonalCuteCharacters/Governor",
+                "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+// Krobus
+		{
+            "LogName": "KrobusPortraits Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Krobus",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/Krobus",
+            "FromFile": "assets/code/Size256.json",
+        },
+        {
+            "LogName": "KrobusPortraits Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Krobus",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+            },
+        },
+        {
+            "LogName": "Krobus",
+            "Action": "EditImage",
+            "Target": "Characters/Krobus",
+            "FromFile": "assets/{{Target}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"SlightlyCuterKrobus": "True",
+            },
+        },
+        {
+            "LogName": "KrobusPortrait",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/Krobus",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+
 // Mr Qi
 		{
-            "LogName": "Mr Qi - Slightly Cuter",
+            "LogName": "MrQiPortraits Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/MrQi",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/MrQi",
+            "FromFile": "assets/code/Size256.json",
+        },
+        {
+            "LogName": "MrQiPortraits Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/MrQi",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+            },
+        },
+        {
+            "LogName": "MrQi",
             "Action": "EditImage",
-            "Target": "Portraits/MrQi, Characters/MrQi",
+            "Target": "Characters/MrQi",
             "FromFile": "assets/{{Target}}.png",
             "When":
             {
                 "HasFile:{{FromFile}}": true,
                 "SlightlyCuterMrQi": "True",
-            }        
-		},
-		
+            },
+        },
+        {
+            "LogName": "MrQiPortrait",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/MrQi",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
 // Professor Snail
-		{
-            "LogName": "Professor Snail - Slightly Cuter",
+        {
+            "LogName": "SafariGuyPortraits Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/SafariGuy",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/SafariGuy",
+            "FromFile": "assets/code/Size256.json",
+        },
+        {
+            "LogName": "SafariGuyPortraits Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/SafariGuy",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+            },
+        }, 
+        {
+            "LogName": "SafariGuy",
             "Action": "EditImage",
             "Target": "Characters/SafariGuy",
             "FromFile": "assets/{{Target}}.png",
@@ -62,7 +304,13 @@
             {
                 "HasFile:{{FromFile}}": true,
                 "SlightlyCuterProfessorSnail": "True",
-            }        
-		},
+            },
+        },
+        {
+            "LogName": "SafariGuyPortrait",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/SafariGuy",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
 	]
 }
