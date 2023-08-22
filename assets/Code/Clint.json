@@ -1,5 +1,60 @@
 {
         "Changes": [
+                // Portraits - HD Portraits Base Clint
+                {
+                        "LogName": "ClintPortraits - Seasonal Base",
+                        "Action": "Load",
+                        "Target": "Mods/SeasonalCuteCharacters/Clint",
+                        "FromFile": "assets/Portraits/Clint/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                },
+                {
+                        "LogName": "ClintPortraits - Festival Base",
+                        "Action": "Load",
+                        "Target": "Mods/SeasonalCuteCharacters/Clint",
+                        "FromFile": "assets/Portraits/Festivals/{{Festival}}/Clint_{{Festival}}.png",
+                },
+                {
+                        "LogName": "ClintPortraits - Beach Base",
+                        "Action": "Load",
+                                "Target": "Mods/SeasonalCuteCharacters/Clint_Beach",
+                                "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+                },
+
+                // Portraits - HD Portraits Add Size Clint
+                {
+                        "LogName": "HD Portrait Size",
+                        "Action": "Load",
+                        "Target": "Mods/HDPortraits/Clint, Mods/HDPortraits/Clint_Beach",
+                        "FromFile": "assets/code/size256.json"
+                },
+
+                // Portraits - Load HD Portraits Clint
+                {
+                        "LogName": "ClintPortraits - Seasonal Load",
+                        "Action": "EditData",
+                        "Target": "Mods/HDPortraits/Clint",
+                        "Entries": {
+                        "Portrait": "Mods/SeasonalCuteCharacters/Clint",
+                        },
+                },
+                {
+                        "LogName": "ClintPortraits - Festival Load",
+                        "Action": "EditData",
+                        "Target": "Mods/HDPortraits/Clint",
+                        "Entries": {
+                        "Portrait": "Mods/SeasonalCuteCharacters/Clint_{{Festival}}",
+                        },
+                },
+                {
+                        "LogName": "ClintPortraits - Beach Load",
+                        "Action": "EditData",
+                        "Target": "Mods/HDPortraits/Clint_Beach",
+                        "Entries": {
+                        "Portrait": "Mods/SeasonalCuteCharacters/Clint_Beach",
+                        },
+                },
+
+//=======================================================
                 {
                         "LogName": "Clint - Seasonal",
                         "Action": "EditImage",

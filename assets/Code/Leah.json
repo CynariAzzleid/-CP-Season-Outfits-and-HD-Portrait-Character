@@ -1,5 +1,60 @@
 {
 	"Changes": [
+                // Portraits - HD Portraits Base Leah
+                {
+                        "LogName": "LeahPortraits - Seasonal Base",
+                        "Action": "Load",
+                        "Target": "Mods/SeasonalCuteCharacters/Leah",
+                        "FromFile": "assets/Portraits/Leah/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                },
+                {
+                        "LogName": "LeahPortraits - Festival Base",
+                        "Action": "Load",
+                        "Target": "Mods/SeasonalCuteCharacters/Leah",
+                        "FromFile": "assets/Portraits/Festivals/{{Festival}}/Leah_{{Festival}}.png",
+                },
+                {
+                        "LogName": "LeahPortraits - Beach Base",
+                        "Action": "Load",
+                        "Target": "Mods/SeasonalCuteCharacters/Leah_Beach",
+                        "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+                },
+
+                // Portraits - HD Portraits Add Size Leah
+                {
+                        "LogName": "HD Portrait Size",
+                        "Action": "Load",
+                        "Target": "Mods/HDPortraits/Leah, Mods/HDPortraits/Leah_Beach",
+                        "FromFile": "assets/code/size256.json"
+                },
+
+                // Portraits - Load HD Portraits Leah
+                {
+                        "LogName": "LeahPortraits - Seasonal Load",
+                        "Action": "EditData",
+                        "Target": "Mods/HDPortraits/Leah",
+                        "Entries": {
+                        "Portrait": "Mods/SeasonalCuteCharacters/Leah",
+                        },
+                },
+                {
+                        "LogName": "LeahPortraits - Festival Load",
+                        "Action": "EditData",
+                        "Target": "Mods/HDPortraits/Leah",
+                        "Entries": {
+                        "Portrait": "Mods/SeasonalCuteCharacters/Leah_{{Festival}}",
+                        },
+                },
+                {
+                        "LogName": "LeahPortraits - Beach Load",
+                        "Action": "EditData",
+                        "Target": "Mods/HDPortraits/Leah_Beach",
+                        "Entries": {
+                        "Portrait": "Mods/SeasonalCuteCharacters/Leah_Beach",
+                        },
+                },
+
+//=======================================================
         {
                 "LogName": "Leah - Seasonal",
                 "Action": "EditImage",

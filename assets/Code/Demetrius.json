@@ -1,5 +1,60 @@
 {
 	 "Changes": [
+	 	// Portraits - HD Portraits Base Demetrius
+		{
+		        "LogName": "DemetriusPortraits - Seasonal Base",
+		        "Action": "Load",
+		        "Target": "Mods/SeasonalCuteCharacters/Demetrius",
+		        "FromFile": "assets/Portraits/Demetrius/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+		},
+		{
+		        "LogName": "DemetriusPortraits - Festival Base",
+		        "Action": "Load",
+		        "Target": "Mods/SeasonalCuteCharacters/Demetrius",
+		        "FromFile": "assets/Portraits/Festivals/{{Festival}}/Demetrius_{{Festival}}.png",
+		},
+		{
+		        "LogName": "DemetriusPortraits - Beach Base",
+		        "Action": "Load",
+				"Target": "Mods/SeasonalCuteCharacters/Demetrius_Beach",
+				"FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+		},
+
+		// Portraits - HD Portraits Add Size Demetrius
+			{
+		        "LogName": "HD Portrait Size",
+		        "Action": "Load",
+		        "Target": "Mods/HDPortraits/Demetrius, Mods/HDPortraits/Demetrius_Beach",
+		        "FromFile": "assets/code/size256.json"
+		},
+
+		// Portraits - Load HD Portraits Demetrius
+		{
+		        "LogName": "DemetriusPortraits - Seasonal Load",
+		        "Action": "EditData",
+		        "Target": "Mods/HDPortraits/Demetrius",
+		        "Entries": {
+		        "Portrait": "Mods/SeasonalCuteCharacters/Demetrius",
+		        },
+		},
+		{
+		        "LogName": "DemetriusPortraits - Festival Load",
+		        "Action": "EditData",
+		        "Target": "Mods/HDPortraits/Demetrius",
+		        "Entries": {
+		        "Portrait": "Mods/SeasonalCuteCharacters/Demetrius_{{Festival}}",
+		        },
+		},
+		{
+		        "LogName": "DemetriusPortraits - Beach Load",
+		        "Action": "EditData",
+		        "Target": "Mods/HDPortraits/Demetrius_Beach",
+		        "Entries": {
+		        "Portrait": "Mods/SeasonalCuteCharacters/Demetrius_Beach",
+		        },
+		},
+
+//=======================================================
 	{
 	        "LogName": "Demetrius - Seasonal",
 	        "Action": "EditImage",

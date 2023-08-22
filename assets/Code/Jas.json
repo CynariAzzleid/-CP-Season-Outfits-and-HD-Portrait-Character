@@ -1,5 +1,60 @@
 {
     "Changes": [
+        // Portraits - HD Portraits Base Jas
+        {
+                "LogName": "JasPortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Jas",
+                "FromFile": "assets/Portraits/Jas/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "JasPortraits - Festival Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Jas",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Jas_{{Festival}}.png",
+        },
+        {
+                "LogName": "JasPortraits - Beach Base",
+                "Action": "Load",
+                                "Target": "Mods/SeasonalCuteCharacters/Jas_Beach",
+                                "FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size Jas
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Jas, Mods/HDPortraits/Jas_Beach",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Jas
+        {
+                "LogName": "JasPortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Jas",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Jas",
+                },
+        },
+        {
+                "LogName": "JasPortraits - Festival Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Jas",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Jas_{{Festival}}",
+                },
+        },
+        {
+                "LogName": "JasPortraits - Beach Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Jas_Beach",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Jas_Beach",
+                },
+        },
+
+//=======================================================
     {
             "LogName": "Jas - Seasonal",
             "Action": "EditImage",

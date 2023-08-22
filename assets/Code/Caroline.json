@@ -1,5 +1,65 @@
 {
         "Changes": [
+                // Portraits - HD Portraits Base Caroline
+                {
+                    "LogName": "CarolinePortraits - Seasonal Base",
+                    "Action": "Load",
+                    "Target": "Mods/SeasonalCuteCharacters/Caroline",
+                    "FromFile": "assets/Portraits/Caroline/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                },
+
+                {
+                    "LogName": "CarolinePortraits - Festival Base",
+                    "Action": "Load",
+                    // "Target": "Mods/SeasonalCuteCharacters/Caroline_{{Festival}}",
+                    "Target": "Mods/SeasonalCuteCharacters/Caroline",
+                    "FromFile": "assets/Portraits/Festivals/{{Festival}}/Caroline_{{Festival}}.png",
+                },
+                {
+                    "LogName": "CarolinePortraits - Beach Base",
+                    "Action": "Load",
+                                "Target": "Mods/SeasonalCuteCharacters/Caroline_Beach",
+                                "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+                },
+
+                // Portraits - HD Portraits Add Size Caroline
+                {
+                    "LogName": "HD Portrait Size",
+                    "Action": "Load",
+                    // "Target": "Mods/HDPortraits/Caroline, Mods/HDPortraits/Caroline_{{Festival}}, Mods/HDPortraits/Caroline_Beach",
+                    "Target": "Mods/HDPortraits/Caroline, Mods/HDPortraits/Caroline_Beach",
+                    "FromFile": "assets/code/size256.json"
+                },
+
+                // Portraits - Load HD Portraits Caroline
+                {
+                    "LogName": "CarolinePortraits - Seasonal Load",
+                    "Action": "EditData",
+                    "Target": "Mods/HDPortraits/Caroline",
+                    "Entries": {
+                    "Portrait": "Mods/SeasonalCuteCharacters/Caroline",
+                    },
+                },
+
+                {
+                    "LogName": "CarolinePortraits - Festival Load",
+                    "Action": "EditData",
+                    // "Target": "Mods/HDPortraits/Caroline_{{Festival}}",
+                    "Target": "Mods/HDPortraits/Caroline",
+                    "Entries": {
+                    "Portrait": "Mods/SeasonalCuteCharacters/Caroline_{{Festival}}",
+                    },
+                },
+                {
+                    "LogName": "CarolinePortraits - Beach Load",
+                    "Action": "EditData",
+                    "Target": "Mods/HDPortraits/Caroline_Beach",
+                    "Entries": {
+                    "Portrait": "Mods/SeasonalCuteCharacters/Caroline_Beach",
+                    },
+                },
+
+//=======================================================
                 {
                         "LogName": "Caroline - Seasonal",
                         "Action": "EditImage",

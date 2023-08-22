@@ -1,5 +1,46 @@
 {
 	"Changes": [
+        // Portraits - HD Portraits Base Willy
+        {
+                "LogName": "WillyPortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Willy",
+                "FromFile": "assets/Portraits/Willy/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "WillyPortraits - Festival Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Willy",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Willy_{{Festival}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size Willy
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Willy",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Willy
+        {
+                "LogName": "WillyPortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Willy",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Willy",
+                },
+        },
+        {
+                "LogName": "WillyPortraits - Festival Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Willy",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Willy_{{Festival}}",
+                },
+        },
+
+//=======================================================
         {
                 "LogName": "Willy - Seasonal",
                 "Action": "EditImage",

@@ -1,5 +1,45 @@
 {
     "Changes": [
+         // Portraits - HD Portraits Base George
+        {
+                "LogName": "GeorgePortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/George",
+                "FromFile": "assets/Portraits/George/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "GeorgePortraits - Festival Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/George",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/George_{{Festival}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size George
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/George",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits George
+        {
+                "LogName": "GeorgePortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/George",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/George",
+                },
+        },
+        {
+                "LogName": "GeorgePortraits - Festival Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/George",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/George_{{Festival}}",
+                },
+        },
+//=======================================================
     {
         "LogName": "George - Seasonal",
         "Action": "EditImage",

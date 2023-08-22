@@ -1,5 +1,60 @@
 {
     "Changes": [
+    	// Portraits - HD Portraits Base Vincent
+		{
+		    "LogName": "VincentPortraits - Seasonal Base",
+		    "Action": "Load",
+		    "Target": "Mods/SeasonalCuteCharacters/Vincent",
+		    "FromFile": "assets/Portraits/Vincent/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+		},
+		{
+		    "LogName": "VincentPortraits - Festival Base",
+		    "Action": "Load",
+		    "Target": "Mods/SeasonalCuteCharacters/Vincent",
+		    "FromFile": "assets/Portraits/Festivals/{{Festival}}/Vincent_{{Festival}}.png",
+		},
+		{
+		    "LogName": "VincentPortraits - Beach Base",
+		    "Action": "Load",
+			"Target": "Mods/SeasonalCuteCharacters/Vincent_Beach",
+			"FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+		},
+
+		// Portraits - HD Portraits Add Size Vincent
+		{
+		    "LogName": "HD Portrait Size",
+		    "Action": "Load",
+		    "Target": "Mods/HDPortraits/Vincent, Mods/HDPortraits/Vincent_Beach",
+		    "FromFile": "assets/code/size256.json"
+		},
+
+		// Portraits - Load HD Portraits Vincent
+		{
+		    "LogName": "VincentPortraits - Seasonal Load",
+		    "Action": "EditData",
+		    "Target": "Mods/HDPortraits/Vincent",
+		    "Entries": {
+		    "Portrait": "Mods/SeasonalCuteCharacters/Vincent",
+		    },
+		},
+		{
+		    "LogName": "VincentPortraits - Festival Load",
+		    "Action": "EditData",
+		    "Target": "Mods/HDPortraits/Vincent",
+		    "Entries": {
+		    "Portrait": "Mods/SeasonalCuteCharacters/Vincent_{{Festival}}",
+		    },
+		},
+		{
+		    "LogName": "VincentPortraits - Beach Load",
+		    "Action": "EditData",
+		    "Target": "Mods/HDPortraits/Vincent_Beach",
+		    "Entries": {
+		    "Portrait": "Mods/SeasonalCuteCharacters/Vincent_Beach",
+		    },
+		},
+
+//=======================================================
     {
             "LogName": "Vincent - Seasonal",
             "Action": "EditImage",

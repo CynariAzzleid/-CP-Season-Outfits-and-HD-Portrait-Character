@@ -1,5 +1,60 @@
 {
     "Changes": [
+        // Portraits - HD Portraits Base Gus
+        {
+                "LogName": "GusPortraits - Seasonal Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Gus",
+                "FromFile": "assets/Portraits/Gus/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        {
+                "LogName": "GusPortraits - Festival Base",
+                "Action": "Load",
+                "Target": "Mods/SeasonalCuteCharacters/Gus",
+                "FromFile": "assets/Portraits/Festivals/{{Festival}}/Gus_{{Festival}}.png",
+        },
+        {
+                "LogName": "GusPortraits - Beach Base",
+                "Action": "Load",
+                        "Target": "Mods/SeasonalCuteCharacters/Gus_Beach",
+                        "FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
+        },
+
+        // Portraits - HD Portraits Add Size Gus
+        {
+                "LogName": "HD Portrait Size",
+                "Action": "Load",
+                "Target": "Mods/HDPortraits/Gus, Mods/HDPortraits/Gus_Beach",
+                "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Gus
+        {
+                "LogName": "GusPortraits - Seasonal Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Gus",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Gus",
+                },
+        },
+        {
+                "LogName": "GusPortraits - Festival Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Gus",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Gus_{{Festival}}",
+                },
+        },
+        {
+                "LogName": "GusPortraits - Beach Load",
+                "Action": "EditData",
+                "Target": "Mods/HDPortraits/Gus_Beach",
+                "Entries": {
+                "Portrait": "Mods/SeasonalCuteCharacters/Gus_Beach",
+                },
+        },
+
+//=======================================================
         {
                 "LogName": "Gus - Seasonal",
                 "Action": "EditImage",
@@ -83,29 +138,29 @@
         },
 		
 // MISCELLANEOUS		
+	{
+		"LogName": "Gus - Emoji",
+		"Action": "EditImage",
+		"Target": "LooseSprites/emojis",
+                "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+		"FromArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
+		"ToArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
+		"When": 
 		{
-			"LogName": "Gus - Emoji",
-			"Action": "EditImage",
-			"Target": "LooseSprites/emojis",
-            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
-			"FromArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
-			"ToArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
-			"When": 
-			{
-				"HasFile:{{FromFile}}": true,
-			},
+			"HasFile:{{FromFile}}": true,
 		},
+	},
+	{
+		"LogName": "Gus - Junimo Note",
+		"Action": "EditImage",
+		"Target": "LooseSprites/JunimoNote",
+		"FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+		"FromArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
+		"ToArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
+		"When":
 		{
-			"LogName": "Gus - Junimo Note",
-			"Action": "EditImage",
-			"Target": "LooseSprites/JunimoNote",
-			"FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
-			"FromArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
-			"ToArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
-			"When":
-			{
-				"HasFile:{{FromFile}}": true,
-			},
+			"HasFile:{{FromFile}}": true,
 		},
+	},
 	]
 }

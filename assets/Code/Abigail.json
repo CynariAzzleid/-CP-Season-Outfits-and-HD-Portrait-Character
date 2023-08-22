@@ -1,5 +1,60 @@
 {
 	"Changes": [
+	    // Portraits - HD Portraits Base Abigail
+    	{
+            "LogName": "AbigailPortraits - Seasonal Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Abigail",
+            "FromFile": "assets/Portraits/Abigail/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+    	},
+		{
+            "LogName": "AbigailPortraits - Festival Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Abigail",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/Abigail_{{Festival}}.png",
+    	},
+    	{
+            "LogName": "AbigailPortraits - Beach Base",
+            "Action": "Load",
+			"Target": "Mods/SeasonalCuteCharacters/Abigail_Beach",
+			"FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+    	},
+
+    	// Portraits - HD Portraits Add Size Abigail
+    	{
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/Abigail, Mods/HDPortraits/Abigail_Beach",
+            "FromFile": "assets/code/size256.json"
+    	},
+
+    	// Portraits - Load HD Portraits Abigail
+    	{
+            "LogName": "AbigailPortraits - Seasonal Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Abigail",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Abigail",
+            },
+    	},
+    	{
+            "LogName": "AbigailPortraits - Festival Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Abigail",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Abigail_{{Festival}}",
+            },
+    	},
+    	{
+            "LogName": "AbigailPortraits - Beach Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Abigail_Beach",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Abigail_Beach",
+            },
+    	},
+
+//=============================================================
 		{
 			"LogName": "Abigail - Seasonal",
 			"Action": "EditImage",

@@ -1,5 +1,60 @@
 {
         "Changes": [
+                // Portraits - HD Portraits Base Alex
+                {
+                    "LogName": "AlexPortraits - Seasonal Base",
+                    "Action": "Load",
+                    "Target": "Mods/SeasonalCuteCharacters/Alex",
+                    "FromFile": "assets/Portraits/Alex/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+                },
+                {
+                    "LogName": "AlexPortraits - Festival Base",
+                    "Action": "Load",
+                    "Target": "Mods/SeasonalCuteCharacters/Alex",
+                    "FromFile": "assets/Portraits/Festivals/{{Festival}}/Alex_{{Festival}}.png",
+                },
+                {
+                    "LogName": "AlexPortraits - Beach Base",
+                    "Action": "Load",
+                                "Target": "Mods/SeasonalCuteCharacters/Alex_Beach",
+                                "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+                },
+
+                // Portraits - HD Portraits Add Size Alex
+                {
+                    "LogName": "HD Portrait Size",
+                    "Action": "Load",
+                    "Target": "Mods/HDPortraits/Alex, Mods/HDPortraits/Alex_Beach",
+                    "FromFile": "assets/code/size256.json"
+                },
+
+                // Portraits - Load HD Portraits Alex
+                {
+                    "LogName": "AlexPortraits - Seasonal Load",
+                    "Action": "EditData",
+                    "Target": "Mods/HDPortraits/Alex",
+                    "Entries": {
+                    "Portrait": "Mods/SeasonalCuteCharacters/Alex",
+                    },
+                },
+                {
+                    "LogName": "AlexPortraits - Festival Load",
+                    "Action": "EditData",
+                    "Target": "Mods/HDPortraits/Alex",
+                    "Entries": {
+                    "Portrait": "Mods/SeasonalCuteCharacters/Alex_{{Festival}}",
+                    },
+                },
+                {
+                    "LogName": "AlexPortraits - Beach Load",
+                    "Action": "EditData",
+                    "Target": "Mods/HDPortraits/Alex_Beach",
+                    "Entries": {
+                    "Portrait": "Mods/SeasonalCuteCharacters/Alex_Beach",
+                    },
+                },
+
+//=======================================================
                 {
                         "LogName": "Alex - Seasonal",
                         "Action": "EditImage",
