@@ -307,9 +307,36 @@
             },
         },
         {
-            "LogName": "SafariGuyPortrait",
+            "LogName": "ProfessorSnailPortrait",
             "Action": "EditImage",
-            "Target": "Mods/SeasonalCuteCharacters/SafariGuy",
+            "Target": "Mods/SeasonalCuteCharacters/ProfessorSnail",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "ProfessorSnailPortraits Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/ProfessorSnail",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/ProfessorSnail",
+            "FromFile": "assets/code/Size256.json",
+        },
+        {
+            "LogName": "ProfessorSnailPortraits Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/ProfessorSnail",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/{{TargetWithoutPath}}",
+            },
+        }, 
+  
+      {
+            "LogName": "ProfessorSnailPortrait",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/ProfessorSnail",
             "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png",
         },
 	]
