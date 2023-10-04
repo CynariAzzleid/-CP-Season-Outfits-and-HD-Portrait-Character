@@ -1,10 +1,34 @@
 {
-	"Changes": [
-		{
-			"LogName": "Gil - Seasonal",
-			"Action": "EditImage",
-			"Target": "Portraits/Gil",
-			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+"Changes": [
+        // Portraits - HD Portraits Base Gil
+        {
+            "LogName": "GilPortraits - Seasonal Base",
+            "Action": "Load",
+            "Target": "Mods/SeasonalCuteCharacters/Gil",
+            "FromFile": "assets/Portraits/Gil/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+        },
+        // Portraits - HD Portraits Add Size Gil
+        {
+            "LogName": "HD Portrait Size",
+            "Action": "Load",
+            "Target": "Mods/HDPortraits/Gil12efv ",
+            "FromFile": "assets/code/size256.json"
+        },
+
+        // Portraits - Load HD Portraits Gil
+        {
+            "LogName": "GilPortraits - Seasonal Load",
+            "Action": "EditData",
+            "Target": "Mods/HDPortraits/Gil",
+            "Entries": {
+            "Portrait": "Mods/SeasonalCuteCharacters/Gil",
+            },
+        },
+        {
+            "LogName": "GilPortraits - Seasonal",
+            "Action": "EditImage",
+            "Target": "Mods/SeasonalCuteCharacters/Gil",
+            "FromFile": "assets/Portraits/Gil/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
 			"When":
 			{
 				"HasFile:{{FromFile}}": true,
