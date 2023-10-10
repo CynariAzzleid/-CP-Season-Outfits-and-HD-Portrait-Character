@@ -134,7 +134,7 @@
         "Update": "OnTimeChange, OnLocationChange",
 	},
 	{
-		"LogName": "Vincent - Beach",
+		"LogName": "VincentPortraits - Beach",
 		"Action": "EditImage",
 		"Target": "Mods/SeasonalCuteCharacters/Vincent_Beach",
 		"FromFile": "assets/Portraits/Beach/Adds/{{TargetWithoutPath}}.png",
